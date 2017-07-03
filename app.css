@@ -1,0 +1,122 @@
+body{
+  background: #ec3333;
+  transition-duration: 0.5s;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.darkened{
+  background: #1d1c2f;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.parent{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box{
+  position: relative;
+  margin: 30px 0;
+}
+
+.logo{
+  position: absolute;
+  z-index: 2;
+  content: '';
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  border: 5px solid white;
+  background: #ef333f;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.field{
+  position: relative;
+  width: 50px; height: 50px;
+  border-radius: 25px;
+  transition: width 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.open{
+  width: 300px;
+}
+
+#search{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 55px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+.result{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.maxHeight{
+  height: 80%;
+}
+
+.child{
+  min-width: 300px;
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  padding: 2px 5px 10px 5px;
+  border: 3px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ef333f;
+}
+
+.child:hover{
+  background: #1e1e3c;
+}
+
+span{
+  margin-bottom: 30px;
+}
+
+.clicked{
+  animation: morph 0.3s linear 1 forwards;
+}
+
+@keyframes morph{
+  from{
+    transform: rotate(45deg);
+  }
+  to{
+    transform: rotate(0deg);
+    border-radius: 50%;
+  }
+}
