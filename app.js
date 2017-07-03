@@ -1,3 +1,5 @@
+const $ = require('jquery')
+
 var $result = document.getElementById("res");
 
 function searchWiki(){
