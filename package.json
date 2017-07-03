@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/geeofree/wikiviewer/issues"
   },
-  "homepage": "https://github.com/geeofree/wikiviewer#readme"
+  "homepage": "https://github.com/geeofree/wikiviewer#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }
